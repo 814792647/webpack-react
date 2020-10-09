@@ -24,11 +24,16 @@ module.exports = {
         loader: "source-map-loader"
       },
       {
-        test: /\.scss$/,
+        test: /\.(s[ac]ss|css)$/i,
         use: [{
           loader: "style-loader"
         }, {
-          loader: "css-loader"
+          loader: 'css-loader',
+          options: {
+            modules: {
+              localIdentName: '[local]',
+            },
+          }
         }, {
           loader: "sass-loader"
         }]
