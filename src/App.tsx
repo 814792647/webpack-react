@@ -1,4 +1,3 @@
-import { any } from 'prop-types';
 import React, { lazy, Suspense } from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
